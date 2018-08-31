@@ -1,7 +1,7 @@
 #############################################################################
-#	Author		  :	Yuvaram Aligeti				                                      #
-#	Date		    :	31, Aug 2018	                                			        #
-#	Description	:	Input & output operations                                   #
+#	Author		:	Yuvaram Aligeti	                #
+#	Date		:	31, Aug 2018	                #
+#	Description	:	Input & output operations           #
 #                                                                           #
 #############################################################################
 '''
