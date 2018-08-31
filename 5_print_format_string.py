@@ -32,6 +32,8 @@ n_eyes = 'black'
 n_teeth = 'white'
 n_hair = 'black'
 n_hex_test = 0x01234567
+n_string1 = "Hello world "
+n_string2 = "Welcome to python"
 
 print "Myself s:%s  :)"%n_name
 print "Myself c:%c  :)"%'c'
@@ -44,5 +46,7 @@ print "Eyes : %s :)"%n_eyes
 print "Teeth : %s :)"%n_teeth
 print "Hair : %s :)"%n_hair
 print "If i add %d, %d, and %d I get %d"%(n_age,n_height, n_weight, n_age+n_height+n_weight)
+print n_string1 + n_string2
+
 
 
