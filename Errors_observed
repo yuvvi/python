@@ -1,0 +1,9 @@
+ERROR 1:
+  File "file_operations.py", line 9  
+  SyntaxError: Non-ASCII character '\xe2' in file file_operations.py
+  on line 10, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
+  
+Solution:
+    Add below line at the top of script
+      # -*- coding: utf-8 -*-
+
