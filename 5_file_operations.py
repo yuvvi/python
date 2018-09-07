@@ -54,9 +54,8 @@ txt = open(filename,"r") #default read mode
 print txt.readlines()
 txt.close()
 
-fl = open(filename,"rw")
+fl = open(filename,"w")
 fl.write("\n2.Hello world")
-print fl.readlines()
 fl.close()
 #python file_operation.py sample.txt
 
