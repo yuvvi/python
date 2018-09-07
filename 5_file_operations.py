@@ -39,15 +39,25 @@
 ##############################
 
 from sys import argv
+from os.path import exists
 
-script, filename = argv
+script =""
+filename = ""
+if len(argv) > 1:
+    script, filename = argv
+else:
+    filename = raw_input("Enter file path: ")
+    if len(filename) == 0:
+        print "Invalid file path: %s" %filename
 
-txt = open(filename) #default read mode
-
-print "FileName : %r"%filename
-print "----read------"
-print txt.read()
-txt.close()
+if exists(filename):#VALIDATE FILE EXIST OR NOT
+  txt = open(filename) #default read mode
+  print "FileName : %r"%filename
+  print "----read------"
+  print txt.read()
+  txt.close()
+else:
+  print 'FIle doesnot exist : 'filename
 
 print "----readlines------"
 txt = open(filename,"r") #default read mode
