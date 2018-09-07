@@ -73,4 +73,6 @@ fl.close()
 with open(filename,'r',encoding='utf-8') as txt1:
   print txt1.read()
 
-
+#EXPLICIT FILE CLOSE IS NOT REQUIRED
+indata = open(filename).read()  #CASE_1
+print 'DATA : ',open(filename).read() #CASE_2
