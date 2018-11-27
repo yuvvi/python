@@ -12,12 +12,12 @@ import sys
 import time
 ##################################################################
 cmd_dict = [
-				['/usr/bin/python','subprocess2.py','1','1'],
-				['/usr/bin/python','subprocess2.py','2','2'],
-				['/usr/bin/python','subprocess2.py','3','3'],
-				['/usr/bin/python','subprocess2.py','4','4'],
-				['/usr/bin/python','subprocess2.py','5','5'],
-				['/usr/bin/python','subprocess2.py','6','6']
+				['/usr/bin/python','child_process.py','1','1'],
+				['/usr/bin/python','child_process.py','2','2'],
+				['/usr/bin/python','child_process.py','3','3'],
+				['/usr/bin/python','child_process.py','4','4'],
+				['/usr/bin/python','child_process.py','5','5'],
+				['/usr/bin/python','child_process.py','6','6']
 			]
 max_process = 4
 current_process_count = 0
