@@ -28,15 +28,17 @@ output_file = '../../output_results.txt'
 def start_process():
 	global cmd_list_position 
 	global max_process
+	global current_process_count
 	print 'start_process()'
 	for j in range(max_process):
-		if cmd_list_position <= len(cmd_dict)-1 and current_process_count <= max_process:
+		if cmd_list_position <= len(cmd_dict)-1 and current_process_count < max_process:
 			print 'process no. ',j
 			print 'cmd_list_position :',cmd_list_position
 			input_cmd = cmd_dict[cmd_list_position]
 			print 'input_cmd :',input_cmd
 			p_obj = subprocess.Popen(input_cmd,stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
 			ps.append(p_obj)
+			current_process_count = current_process_count + 1
 			cmd_list_position =cmd_list_position + 1
 		else:
 			print 'no cmds to process or process limit exceeded :',current_process_count
@@ -58,6 +60,7 @@ def check_process_status():
 				print 'check_output :',p_obj.check_output()
 				print 'Process completed.'
 				ps.remove(p_obj)
+				current_process_count = current_process_count - 1
 				start_process()
 		time.sleep(2)
 	for p_obj in ps:
