@@ -4,6 +4,12 @@ Created on Fri Jul 26 16:00:20 2019
 Script to get Valgrind output lines from NDS_logs
 @author: ayuvaram
 """
+"""
+EXAMPLE LOG
+Jul 26 12:14:29 user.debug : _|_VALGRIND_LOG#EPGAPP_START#1564114384349
+Jul 26 12:14:29 user.debug : _|_VALGRIND_LOG#NEXT_TAB# 1564114469005
+
+"""
 import sys
 import os.path
 import csv
